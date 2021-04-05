@@ -1,0 +1,253 @@
+html,
+body {
+	height: 100%;
+}
+
+html {
+	scroll-behavior: smooth;
+}
+
+body {
+	margin: 0;
+	font: 15px "Roboto", sans-serif;
+	color: #202020;
+	text-align: center;
+}
+
+/* navigation */
+
+#nav {
+	position: fixed;
+	top: 0;
+	right: 0;
+	background-color: #f5f4f4;
+	width: 100vw;
+	text-align: right;
+	padding: 30px;
+	z-index: 10;
+}
+
+#nav a {
+	padding-left: 30px;
+	text-transform: uppercase;
+	font-weight: 500;
+}
+
+/* all links */
+
+a {
+	color: #4d8b31;
+	text-decoration: none;
+	transition-duration: 0.3s;
+}
+
+a:hover,
+a:focus {
+	text-decoration: underline;
+	letter-spacing: 0.25ch;
+	color: #a61c3c;
+}
+
+/* general formatting */
+
+h1 {
+	color: #4d8b31;
+}
+
+section {
+	height: 100vh;
+	padding-top: 70px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.section-content {
+	display: flex;
+	flex-direction: column;
+	justify-content: start;
+	width: 80vw;
+	height: 70vh;
+	background-color: #f5f4f4;
+	margin: auto;
+	padding: 20px 40px;
+}
+
+@media (min-width: 1500px) {
+	.section-content {
+		width: 50vw;
+	}
+}
+
+button {
+	background-color: #4d8b31;
+	border: none;
+	color: #f5f4f4;
+	padding: 10px 40px;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	font-size: 15px;
+	text-transform: uppercase;
+	border-radius: 25px;
+	transition-duration: 0.3s;
+	width: fit-content;
+	height: fit-content;
+}
+
+button:hover,
+button:focus {
+	cursor: pointer;
+	letter-spacing: 0.25ch;
+	text-decoration: underline;
+}
+
+/* container specific formatting */
+
+#welcome {
+	align-self: flex-start;
+	background-image: url("https://images.pexels.com/photos/454509/pexels-photo-454509.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940");
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+#welcome-content {
+	width: 100%;
+	height: 100%;
+	background-color: rgb(0, 0, 0, 0.4);
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+#welcome-content h1 {
+	font-size: 64px;
+	color: #6fbf4a;
+	margin-bottom: 0;
+}
+
+#welcome-content p {
+	color: #f5f4f4;
+	width: 50%;
+	font-size: 16px;
+}
+
+#about {
+	background-image: url("https://images.pexels.com/photos/1784581/pexels-photo-1784581.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940");
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+#about-content {
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	height: 100%;
+	padding: 40px 0;
+}
+
+#about .profile-pic {
+	height: 150px;
+	border-radius: 50%;
+}
+
+#statistics {
+	background-image: url("https://images.pexels.com/photos/1389986/pexels-photo-1389986.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940");
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+#track {
+	background-image: url("https://images.pexels.com/photos/235648/pexels-photo-235648.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940");
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+#track-content {
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	grid-template-rows: 1fr min-content;
+	height: 100%;
+	grid-gap: 40px;
+	padding-bottom: 50px;
+	position: relative;
+}
+
+#track-content p {
+	text-align: justify;
+}
+
+#track-content button {
+	justify-self: center;
+}
+
+#track-donate button {
+	background-color: #275dad;
+}
+
+#info {
+	background-image: url("https://images.pexels.com/photos/2131784/pexels-photo-2131784.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260");
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+#info-content {
+	height: 100%;
+	overflow-y: scroll;
+}
+
+#info .blog-post {
+	padding-left: 20px;
+	padding-right: 20px;
+	padding-bottom: 40px;
+	border-bottom: #6b6161 1px solid;
+}
+
+#info .blog-post p {
+	text-align: justify;
+}
+
+#info .blog-post img {
+	width: 70%;
+}
+
+#info-scroll {
+	margin-top: 20px;
+}
+
+#info-scroll img {
+	height: 40px;
+	transform: rotate(180deg);
+	animation: bouncedown 3s infinite backwards;
+}
+
+@keyframes bouncedown {
+	0% {
+		transform: translate(0, 0) rotate(180deg);
+		opacity: 0.5;
+	}
+	20% {
+		transform: rotate(180deg);
+		opacity: 1;
+	}
+	80% {
+		transform: translate(0, 15px) rotate(180deg);
+		opacity: 0;
+	}
+	100% {
+		transform: translate(0, 0) rotate(180deg);
+		opacity: 0;
+	}
+}
+
+footer {
+	background-color: #f5f4f4;
+	padding-top: 20px;
+	padding-bottom: 20px;
+	line-height: 1.5em;
+}
