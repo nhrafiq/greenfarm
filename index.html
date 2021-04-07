@@ -3,6 +3,7 @@
 <html>
     <head>
         <link rel="stylesheet" href="style.css">
+        <script src="https://kit.fontawesome.com/2001443802.js" crossorigin="anonymous"></script>
     </head>
 
     <body>
@@ -18,7 +19,7 @@
             <section id="welcome">
                 <div id="welcome-content">
                     <h1>GreenFarm</h1>
-                    <p>Welcome! This website was created by a group of students seeking to help farmers understand their carbon and water footprints through the use of multimedia resources.</p>
+                    <p>Welcome! This website was created by a group of students seeking to provide farmers a set of multimedia tools to measure their carbon and water footprints.</p>
                 </div>
             </section>
 
@@ -80,18 +81,29 @@
             <section id="statistics">
                 <div class="section-content">
                     <h1>Statistics</h1>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed nisi ipsum, pharetra a eleifend eu, lacinia at purus.
-                    Pellentesque nisi dolor, dictum et massa et, blandit elementum enim. Cras sollicitudin suscipit urna, nec vestibulum leo
-                    vestibulum et. Sed finibus lacus nec odio elementum, et sollicitudin augue elementum. Sed pulvinar, mauris nec luctus
-                    feugiat, odio nisl pretium massa, vestibulum efficitur velit neque ut eros. Pellentesque maximus nisi nec metus mattis
-                    ornare nec at augue. Ut facilisis rutrum sollicitudin.</p>
-                    
-                    <p>Pellentesque mi turpis, tempus non luctus in, consectetur ac justo. Etiam non dui nisl. Integer iaculis ullamcorper dui.
-                    Vivamus iaculis mauris sit amet lectus mollis laoreet. Curabitur vitae viverra sapien. Proin at malesuada nunc, eget
-                    consectetur risus. Vivamus a ex porta, placerat justo cursus, consectetur nibh. Praesent venenatis erat quis libero
-                    posuere tincidunt. Nunc ac lorem sodales, finibus leo at, iaculis quam. In hac habitasse platea dictumst. Sed tellus
-                    ligula, sollicitudin vitae arcu ut, volutpat ullamcorper justo. Etiam convallis pellentesque lacus eget imperdiet.
-                    Curabitur convallis tincidunt tellus, ac finibus lectus.</p>
+
+                    <div id="statistics-content">
+                        <div id="stat-content-col1">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed nisi ipsum, pharetra a eleifend eu, lacinia at purus.
+                        Pellentesque nisi dolor, dictum et massa et, blandit elementum enim. Cras sollicitudin suscipit urna, nec vestibulum leo
+                        vestibulum et. Sed finibus lacus nec odio elementum, et sollicitudin augue elementum. Sed pulvinar, mauris nec luctus
+                        feugiat, odio nisl pretium massa, vestibulum efficitur velit neque ut eros. Pellentesque maximus nisi nec metus mattis
+                        ornare nec at augue. Ut facilisis rutrum sollicitudin.</p>
+                        
+                        <p>Pellentesque mi turpis, tempus non luctus in, consectetur ac justo. Etiam non dui nisl. Integer iaculis ullamcorper
+                        dui. Vivamus iaculis mauris sit amet lectus mollis laoreet. Curabitur vitae viverra sapien. Proin at malesuada nunc, eget
+                        consectetur risus. Vivamus a ex porta, placerat justo cursus, consectetur nibh. Praesent venenatis erat quis libero
+                        posuere tincidunt. Nunc ac lorem sodales, finibus leo at, iaculis quam. In hac habitasse platea dictumst. Sed tellus
+                        ligula, sollicitudin vitae arcu ut, volutpat ullamcorper justo. Etiam convallis pellentesque lacus eget imperdiet.
+                        Curabitur convallis tincidunt tellus, ac finibus lectus.</p>
+                        </div>
+                        
+                        <div id="stat-content-col2">
+                            <img src="./assets/linegraph.jpeg" alt="Graph of annual total CO2 emmissions by world region">
+                            <img src="./assets/piegraph.jpeg" alt="Pie chart">
+                        </div>
+
+                    </div>
                 </div>
             </section>
 
@@ -156,7 +168,10 @@
                                 luctus feugiat, odio nisl pretium massa, vestibulum efficitur velit neque ut eros. Pellentesque maximus nisi nec
                                 metus
                                 mattis ornare nec at augue. Ut facilisis rutrum sollicitudin.</p>
-                            <img src="https://images.pexels.com/photos/6622955/pexels-photo-6622955.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500" alt="Group of sheep">
+                            <!-- <img src="https://images.pexels.com/photos/6622955/pexels-photo-6622955.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500" alt="Group of sheep"> -->
+                            <iframe width="560" height="315" src="https://www.youtube.com/embed/eVwQA3aN2Zw" title="YouTube video player"
+                                frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                allowfullscreen></iframe>
                         </div>
 
                         <div class="blog-post">
@@ -176,17 +191,32 @@
                     </div>
 
                     <div id="info-scroll">
-                        <img src="https://www.flaticon.com/svg/vstatic/svg/992/992703.svg?token=exp=1617654029~hmac=3426ccc71d196acefca95f147832bb06" alt="Down arrow"/>
+                        <i class="fas fa-chevron-down"></i>
                         <p>Scroll for more</p>
                     </div>
+
+                    
                 </div>
             </section>
         </main>
 
         <footer>
-            <div>Images courtesy of <a href="https://www.pexels.com/">www.pexels.com</a></div>
-            <div>Icons made by <a href="https://www.flaticon.com/authors/dmitri13" title="dmitri13">dmitri13</a> from <a
-                    href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div>
+            <div id="contact">
+                <p>Stay updated with our news and media!</p>
+            
+                <div id="social-media">
+                    <i class="fab fa-facebook"></i>
+                    <i class="fab fa-twitter"></i>
+                    <i class="fab fa-instagram"></i>
+                    <i class="fab fa-youtube"></i>
+                </div>
+
+                <p>For additional support or feedback please email <a href="">greenfarm@email.com</a>.</p>
+            </div>
+
+            <p>All rights reserved © Copyright 2021</p>
+            <p>Images courtesy of <a href="https://www.pexels.com/">www.pexels.com</a><br>
+            Icons powered by <a href="https://fontawesome.com/">Font Awesome</a></p>
         </footer>
     </body>
 </html>
