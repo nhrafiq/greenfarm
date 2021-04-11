@@ -120,9 +120,14 @@ button:focus {
 	align-items: center;
 }
 
-#welcome-content h1 {
+/* #welcome-content h1 {
 	font-size: 64px;
 	color: #6fbf4a;
+	margin-bottom: 0;
+} */
+
+#welcome-content img {
+	height: 150px;
 	margin-bottom: 0;
 }
 
