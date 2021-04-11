@@ -237,6 +237,10 @@ button:focus {
 	text-align: justify;
 }
 
+#info .blog-post ul {
+	text-align: left;
+}
+
 #info .blog-post img {
 	width: 70%;
 }
