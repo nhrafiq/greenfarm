@@ -165,11 +165,17 @@ button:focus {
 }
 
 #statistics-content {
-	display: grid;
+	/* display: grid;
 	grid-template-columns: repeat(2, 1fr);
-	column-gap: 40px;
+	column-gap: 20px; */
 	height: 100%;
 	text-align: justify;
+}
+
+#stat-content-col1 {
+	overflow-y: scroll;
+	padding-right: 20px;
+	height: 90%;
 }
 
 #stat-content-col2 {
@@ -183,6 +189,7 @@ button:focus {
 	margin-top: 20px;
 	width: 100%;
 	max-width: 475px;
+	max-height: 50%;
 }
 
 #track {
