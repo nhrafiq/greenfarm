@@ -214,9 +214,23 @@ button:focus {
 	position: relative;
 }
 
-#track-content p {
-	text-align: justify;
+#track-content iframe {
+	width: 100%;
+	height: 90%;
+	overflow: scroll;
 }
+
+#track-content iframe:focus {
+	outline: none;
+}
+
+#track-content iframe[seamless] {
+	display: block;
+}
+
+/* #track-content p {
+	text-align: justify;
+}*/
 
 #track-content button {
 	justify-self: center;
