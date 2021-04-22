@@ -150,9 +150,9 @@ button:focus {
 	column-gap: 40px;
 	height: 100%;
 	padding: 40px 0;
-}
+} */
 
-#about .profile-pic {
+/* #about .profile-pic {
 	height: 150px;
 	border-radius: 50%;
 } */
@@ -160,6 +160,7 @@ button:focus {
 #about-content {
 	height: 100%;
 	text-align: justify;
+	overflow-y: scroll;
 }
 
 #statistics {
@@ -170,15 +171,16 @@ button:focus {
 }
 
 #statistics-content {
-	/* display: grid;
+	display: grid;
 	grid-template-columns: repeat(2, 1fr);
-	column-gap: 20px; */
+	column-gap: 20px;
 	height: 100%;
 	text-align: justify;
+	overflow-y: scroll;
 }
 
 #stat-content-col1 {
-	overflow-y: scroll;
+	/* overflow-y: scroll; */
 	padding-right: 20px;
 	height: 90%;
 }
@@ -188,6 +190,13 @@ button:focus {
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
+}
+
+@media screen and (max-width: 700px) {
+	#statistics-content {
+		display: flex;
+		flex-direction: column;
+	}
 }
 
 #statistics-content img {
