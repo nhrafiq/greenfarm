@@ -226,6 +226,7 @@ button:focus {
 #track-content iframe {
 	width: 100%;
 	height: 90%;
+	max-height: 450px;
 	overflow: scroll;
 }
 
@@ -243,6 +244,7 @@ button:focus {
 
 #track-content button {
 	justify-self: center;
+	margin: 10px;
 }
 
 #track-donate button {
